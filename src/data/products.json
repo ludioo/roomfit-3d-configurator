@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": "armchair",
+      "label": { "en": "Armchair", "id": "Kursi" },
+      "modelUrl": "/models/armchair.glb",
+      "bodyMaterialNames": ["Armchair_01"],
+      "defaultScale": 1.0,
+      "basePrice": { "IDR": 1850000, "USD": 119, "illustrative": true },
+      "options": {
+        "fabricColor": [
+          { "id": "sand", "hex": "#D4C4A8", "label": { "en": "Sand", "id": "Pasir" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "terracotta", "hex": "#C56A4A", "label": { "en": "Terracotta", "id": "Terakota" }, "priceAdd": { "IDR": 50000, "USD": 5 } },
+          { "id": "forest", "hex": "#3F5D4E", "label": { "en": "Forest", "id": "Hijau hutan" }, "priceAdd": { "IDR": 50000, "USD": 5 } },
+          { "id": "slate", "hex": "#5B6570", "label": { "en": "Slate", "id": "Abu" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "ivory", "hex": "#F0E6D8", "label": { "en": "Ivory", "id": "Gading" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "navy", "hex": "#2C3E5A", "label": { "en": "Navy", "id": "Navy" }, "priceAdd": { "IDR": 75000, "USD": 6 } }
+        ],
+        "finish": [
+          { "id": "fabric", "label": { "en": "Fabric", "id": "Kain" }, "roughness": 0.85, "metalness": 0.0, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "leather", "label": { "en": "Leather", "id": "Kulit" }, "roughness": 0.45, "metalness": 0.05, "priceAdd": { "IDR": 350000, "USD": 25 } }
+        ],
+        "size": [
+          { "id": "standard", "scale": 1.0, "label": { "en": "Standard", "id": "Standar" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "large", "scale": 1.12, "label": { "en": "Large", "id": "Besar" }, "priceAdd": { "IDR": 250000, "USD": 18 } }
+        ]
+      }
+    },
+    {
+      "id": "sofa",
+      "label": { "en": "Sofa", "id": "Sofa" },
+      "modelUrl": "/models/sofa.glb",
+      "bodyMaterialNames": ["Sofa_01"],
+      "defaultScale": 1.0,
+      "basePrice": { "IDR": 4250000, "USD": 279, "illustrative": true },
+      "options": {
+        "fabricColor": [
+          { "id": "sand", "hex": "#D4C4A8", "label": { "en": "Sand", "id": "Pasir" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "terracotta", "hex": "#C56A4A", "label": { "en": "Terracotta", "id": "Terakota" }, "priceAdd": { "IDR": 50000, "USD": 5 } },
+          { "id": "forest", "hex": "#3F5D4E", "label": { "en": "Forest", "id": "Hijau hutan" }, "priceAdd": { "IDR": 50000, "USD": 5 } },
+          { "id": "slate", "hex": "#5B6570", "label": { "en": "Slate", "id": "Abu" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "ivory", "hex": "#F0E6D8", "label": { "en": "Ivory", "id": "Gading" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "navy", "hex": "#2C3E5A", "label": { "en": "Navy", "id": "Navy" }, "priceAdd": { "IDR": 75000, "USD": 6 } }
+        ],
+        "finish": [
+          { "id": "fabric", "label": { "en": "Fabric", "id": "Kain" }, "roughness": 0.85, "metalness": 0.0, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "leather", "label": { "en": "Leather", "id": "Kulit" }, "roughness": 0.45, "metalness": 0.05, "priceAdd": { "IDR": 350000, "USD": 25 } }
+        ],
+        "size": [
+          { "id": "standard", "scale": 1.0, "label": { "en": "Standard", "id": "Standar" }, "priceAdd": { "IDR": 0, "USD": 0 } },
+          { "id": "large", "scale": 1.12, "label": { "en": "Large", "id": "Besar" }, "priceAdd": { "IDR": 250000, "USD": 18 } }
+        ]
+      }
+    }
+  ]
+}

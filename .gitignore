@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+.env.local
+coverage
+.lighthouseci
+test-results
+playwright-report
+blob-report
+playwright/.cache
+.vercel

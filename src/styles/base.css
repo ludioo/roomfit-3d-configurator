@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/dm-sans-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/dm-sans-latin-500-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/dm-sans-latin-700-normal.woff2') format('woff2');
+}
+
+:root {
+  --bg: #0f1115;
+  --bg-elevated: #1a1e26;
+  --bg-soft: #242a35;
+  --text: #f3f1ec;
+  --text-muted: #a8a29a;
+  --accent: #d4a373;
+  --accent-press: #b8895a;
+  --success: #3ddc97;
+  --danger: #e85d5d;
+  --border: #2e3542;
+  --swatch-ring: #ffffff;
+  --font-ui: 'DM Sans', system-ui, sans-serif;
+  --radius-btn: 10px;
+  --touch-min: 44px;
+  --config-panel-width: 320px;
+  /* Single source for fallback peek + mobile CTA/toast offset (native overrides to 25dvh). */
+  --sheet-peek-height: 7.5rem;
+  /* CTA stack above peek: button height + gap under toast (M9). */
+  --ar-cta-clearance: calc(var(--touch-min) + 1.75rem);
+}
+
+/* Short phone landscape: lower peek so canvas stays usable (~≥40% height). */
+@media (orientation: landscape) and (max-height: 500px) {
+  :root {
+    --sheet-peek-height: 34svh;
+  }
+}
+
+/* Short portrait (e.g. iPhone SE 667): taller fallback peek so first swatch clears footer. */
+@media (max-height: 700px) and (orientation: portrait) {
+  :root {
+    --sheet-peek-height: 11.5rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.icon--sm {
+  width: 1.125rem;
+  height: 1.125rem;
+}

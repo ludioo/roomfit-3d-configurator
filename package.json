@@ -1,0 +1,46 @@
+{
+  "name": "furniture-configurator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "e2e:mobile": "playwright test --project=mobile-pixel7 --project=mobile-iphone13 --project=mobile-iphone-se --project=mobile-landscape",
+    "e2e:baseline": "playwright test -c playwright.baseline.config.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "lhci": "npm run build && lhci autorun --config=./lighthouserc.cjs",
+    "optimize:model": "node scripts/optimize-model.mjs"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0",
+    "camera-controls": "^3.1.0",
+    "driver.js": "^1.10.2",
+    "lil-gui": "^0.21.0",
+    "motion": "^14.9.0",
+    "pure-web-bottom-sheet": "^1.1.1",
+    "stats.js": "^0.17.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@gltf-transform/cli": "^4.5.1",
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.64.1",
+    "draco3dgltf": "^1.5.9",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.10",
+    "sharp": "^0.35.5",
+    "vite": "^6.4.0",
+    "vitest": "^5.0.5"
+  }
+}

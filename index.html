@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <!-- Keep SITE_ORIGIN in sync with src/core/siteConfig.js -->
+    <link rel="canonical" href="https://configurator.barkahmauludi.com/" />
+    <meta
+      name="description"
+      content="RoomFit — configure armchair and sofa finishes in 3D, then preview in your room with AR."
+    />
+    <meta name="theme-color" content="#12151c" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RoomFit" />
+    <meta property="og:title" content="RoomFit" />
+    <meta
+      property="og:description"
+      content="Configure furniture in 3D and preview it in your room with AR."
+    />
+    <meta property="og:url" content="https://configurator.barkahmauludi.com/" />
+    <meta
+      property="og:image"
+      content="https://configurator.barkahmauludi.com/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RoomFit" />
+    <meta
+      name="twitter:description"
+      content="Configure furniture in 3D and preview it in your room with AR."
+    />
+    <meta
+      name="twitter:image"
+      content="https://configurator.barkahmauludi.com/og-image.png"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title data-i18n="app.title">RoomFit</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div
+      id="splash"
+      class="splash"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <p class="splash__title" data-i18n="app.title">RoomFit</p>
+      <p id="splash-pct" class="splash__pct">0%</p>
+      <p id="splash-status" class="splash__status" data-i18n="splash.loading">
+        Loading 3D model…
+      </p>
+      <button
+        id="splash-retry"
+        class="splash__retry"
+        type="button"
+        hidden
+        data-i18n="splash.retry"
+      >
+        Retry
+      </button>
+    </div>
+    <div
+      id="model-busy"
+      class="model-busy"
+      hidden
+      role="status"
+      aria-live="polite"
+      aria-busy="false"
+    >
+      <span data-i18n="splash.switching">Switching model…</span>
+    </div>
+    <div id="webgl-poster" class="webgl-poster" hidden>
+      <p data-i18n="webgl.unsupported">
+        WebGL is not available on this device or browser.
+      </p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

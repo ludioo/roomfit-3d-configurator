@@ -1,0 +1,86 @@
+/* Loaded after driver.js/dist/driver.css so theme tokens win. */
+.driver-popover {
+  background-color: var(--bg-elevated);
+  background-image: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  font-family: inherit;
+}
+
+.driver-popover-title {
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.driver-popover-description {
+  color: var(--text);
+  font: inherit;
+  line-height: 1.45;
+  opacity: 0.92;
+}
+
+.driver-popover-progress-text {
+  color: var(--text-muted);
+}
+
+.driver-popover-footer button,
+.driver-popover-prev-btn,
+.driver-popover-next-btn {
+  min-height: var(--touch-min);
+  border-radius: var(--radius-btn);
+  font: inherit;
+  text-shadow: none;
+}
+
+.driver-popover-next-btn {
+  background-color: var(--accent);
+  color: #1a120c;
+  border: 1px solid var(--accent);
+  text-shadow: none;
+}
+
+.driver-popover-next-btn:hover,
+.driver-popover-next-btn:focus {
+  background-color: var(--accent-press);
+  border-color: var(--accent-press);
+}
+
+.driver-popover-prev-btn {
+  background-color: var(--bg-soft);
+  color: var(--text);
+  border: 1px solid var(--border);
+  text-shadow: none;
+}
+
+.driver-popover-close-btn {
+  color: var(--text-muted);
+}
+
+.driver-popover-close-btn:hover,
+.driver-popover-close-btn:focus {
+  color: var(--text);
+}
+
+.driver-popover-arrow {
+  border-color: var(--bg-elevated);
+}
+
+.driver-popover-arrow-side-left {
+  border-right-color: var(--bg-elevated);
+}
+
+.driver-popover-arrow-side-right {
+  border-left-color: var(--bg-elevated);
+}
+
+.driver-popover-arrow-side-top {
+  border-bottom-color: var(--bg-elevated);
+}
+
+.driver-popover-arrow-side-bottom {
+  border-top-color: var(--bg-elevated);
+}
