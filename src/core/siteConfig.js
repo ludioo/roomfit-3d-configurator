@@ -2,7 +2,7 @@
  * Public site origin for canonical / Open Graph / Twitter.
  * Change this one value when the subdomain moves (deploy/DNS stay manual).
  */
-export const SITE_ORIGIN = 'https://configurator.barkahmauludi.com';
+export const SITE_ORIGIN = 'https://roomfit.barkahmauludi.com';
 
 export const SITE_NAME = 'RoomFit';
 

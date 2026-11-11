@@ -2,6 +2,7 @@ node_modules
 dist
 .tmp
 .env.local
+.env
 coverage
 .lighthouseci
 test-results

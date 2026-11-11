@@ -85,7 +85,7 @@ describe('analytics', () => {
     const s = document._scripts[0];
     expect(s.src).toBe('https://cloud.umami.is/script.js');
     expect(s.attrs['data-website-id']).toBe('test-website-id');
-    expect(s.attrs['data-domains']).toBe('configurator.barkahmauludi.com');
+    expect(s.attrs['data-domains']).toBe('roomfit.barkahmauludi.com');
     expect(s.attrs['data-furncfg-umami']).toBe('1');
     expect(s.defer).toBe(true);
   });

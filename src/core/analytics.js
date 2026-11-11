@@ -1,7 +1,7 @@
 const SCRIPT_MARKER = 'data-furncfg-umami';
 const PENDING_ATTR = 'data-furncfg-umami-pending';
 const UMAMI_SRC = 'https://cloud.umami.is/script.js';
-const UMAMI_DOMAINS = 'configurator.barkahmauludi.com';
+const UMAMI_DOMAINS = 'roomfit.barkahmauludi.com';
 
 /**
  * Inject Umami only when VITE_UMAMI_WEBSITE_ID is set. Idempotent; idle after model load.
